@@ -3,19 +3,18 @@ import Layout from '../layouts/Layout.astro';
 import ContextAlert from '../components/ContextAlert.astro';
 import Markdown from '../components/Markdown.astro';
 
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
 ---
 
-<Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+<Layout title="Un bon chien respecte les chats">
+    <div style="max-width: 800px; margin: 0 auto; padding: 2rem; line-height: 1.6; font-family: Georgia, serif;">
+        <div style="border: 2px solid #333; padding: 1.5rem; margin-bottom: 2rem; background-color: #f9f9f9; border-radius: 8px;">
+            <p style="font-weight: bold; margin-bottom: 1rem; color: #333;">437. Il est interdit de fixer une enseigne à un arbre, un balcon, une galerie, un perron, une terrasse ou à un escalier.</p>
+            
+            <p style="font-style: italic; margin-bottom: 0; color: #333;">Arrondissement du Plateau-Mont-Royal, Règlement 01-277, art. 437</p>
+        </div>
+        
+        <p style="margin-bottom: 1rem;">Nous demandons que Yannick Sarrazin, son équipe et ses clients respectent la réglementation en vigueur. De plus, nous demandons qu'il laisse en place nos chats. Ils veulent simplement jouer avec votre lévrier.</p>
+        
+        <p>De plus, nous vous demandons de bien vouloir reconsidérer vos choix de vie. La gentrification améliore-t-elle vraiment le Plateau ? Est-il équitable de vous enrichir aux dépens de personnes moins fortunées ?</p>
+    </div>
 </Layout>
